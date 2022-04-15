@@ -123,7 +123,9 @@ margin-right: 50px;
   letter-spacing: 0.02em;
   color: var(--secondory-text-color);
   text-align: center;
+  align-items: center;
   padding: 32px 0px;
+  display: flex;
 }
 
 .contact:hover,
@@ -132,37 +134,35 @@ margin-right: 50px;
 }
 
 
-
-/*.email-icon,
+.email-icon,
 .phone-icon {
   margin-right: 10px;
+  fill: #757575;
 }
+
   .contact:hover .email-icon,
   .contact:hover .phone-icon,
   .contact:focus .email-icon,
   .contact:focus .phone-icon {
     fill: var(--accent-color);
   }
-*/
-
-
 
 /* ------секція герой------ */
 
 .hero {
-  background-color: var(--footer-bg-color);
-padding: 200px 0;
+    background-color: var(--footer-bg-color);
+    padding: 200px 0;
     max-width: 1600px;
     min-height: 600px;
     margin-right: auto;
     margin-left: auto;
-background-image: linear-gradient(
-  rgba(47, 48, 58, 0.4), 
-  rgba(47, 48, 58, 0.4)), 
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
   url(../images/hero-bg.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
 
 }
 
