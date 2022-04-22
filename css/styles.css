@@ -153,7 +153,6 @@ margin-right: 50px;
     background-color: var(--footer-bg-color);
     padding: 200px 0;
     max-width: 1600px;
-    min-height: 600px;
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(
@@ -401,13 +400,19 @@ img {
   fill: #AFB1B8;
 }
 
-.user-soc-link:hover {
+.user-soc-link:hover,
+.user-soc-link:focus {
   background-color: var(--accent-color);
 }
 
 .user-soc-link:hover .user-soc-icon{
   fill: var(--primary-bg-color);
 }
+
+.user-soc-link:focus .user-soc-icon {
+  fill: var(--primary-bg-color);
+}
+
 
 
 /* --- постійні клієнти- --- */
@@ -474,6 +479,7 @@ img {
   display: flex;
 }
 .footer{
+  align-items: baseline;
   display: flex;
 }
 
@@ -528,7 +534,6 @@ margin-top: 9px;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
-text-align: center;
 text-transform: uppercase;
 color: var(--text-title-color);
 }
@@ -567,7 +572,8 @@ margin-left: 70px;
   fill: var(--primary-bg-color);
 }
 
-.futer-call-link:hover {
+.futer-call-link:hover,
+.futer-call-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -673,12 +679,17 @@ display: flex;
   margin-top: 4px;
 }
 
-
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-hover {
+  display: block;
 }
+
+.project-hover:hover,
+.project-hover:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 /* ------футер підтягує стилі з CSS index.html------ */
 
